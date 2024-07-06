@@ -1,13 +1,7 @@
-import AuthService from "./services/auth.service.js";
+import broker from "./src/utils/broker.js";
 
 async function startApp() {
-  try {
-    await AuthService.start();
-  } catch (error) {
-    console.error("An error occurred:", error);
-  } finally {
-    // AuthService.stop();
-  }
+  console.log("app started");
 }
 
 startApp();
