@@ -19,7 +19,7 @@ function connected(err) {
 
 DB.run(SQL_CREATE_TABLE, [], (err) => {
   if (err) {
-    console.log("error creating animelist table ", err.message);
+    console.log("error creating users table ", err.message);
     return;
   }
   console.log("Table created.");
